@@ -1,0 +1,32 @@
+
+<link rel="stylesheet" href="/css/tictactoe.css">
+
+<div class="ttt-container">
+    <h1>Tic Tac Toe — Play vs AI</h1>
+
+    <div class="ttt-controls">
+        <label>Difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium" selected>Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+
+        <button id="restart">Restart</button>
+    </div>
+
+    <div class="ttt-player-choice">
+        <span>You play as:</span>
+        <button id="chooseX">X</button>
+        <button id="chooseO">O</button>
+    </div>
+
+    <div id="board" class="ttt-board"></div>
+
+    <div class="ttt-status">
+        <p id="status">Your move</p>
+        <p id="score">Wins: 0 | Losses: 0 | Draws: 0</p>
+    </div>
+</div>
+
+<script src="/js/ttt.js"></script>

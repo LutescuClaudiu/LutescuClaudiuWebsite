@@ -1,0 +1,41 @@
+.ttt-container {
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.ttt-board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    gap: 8px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.ttt-cell {
+    width: 120px;
+    height: 120px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ttt-cell.win {
+    background: #c1ffd1;
+}
+
+.ttt-controls,
+.ttt-player-choice {
+    margin-top: 15px;
+}
+
+.ttt-status {
+    margin-top: 20px;
+    font-size: 18px;
+}
